@@ -12,24 +12,6 @@
         </div>
       </article>
     </div>
-
-    <!-- Große Card in Hero-Breite -->
-    <article class="card big">
-      <h2>Ein Einblick in unsere Arbeit gefällig?</h2>
-      <p class="lead">
-        Hier findest du ein paar Vorlagen, die wir bereits für Bestandskunden erledigt haben – wir überzeugen
-        mit Qualität und mit Flexibilität. Deine Idee in unserer Hand.
-      </p>
-      <p class="muted">
-        Ob Einzelstück oder Team-Ausstattung: Wir beraten dich bei Stoffwahl, Schnitt und Veredelung
-        (Flex, Flock, DTF, Siebdruck-Transfer). Auf Wunsch inkl. Motiv-Feinschliff und Größenmix.
-        Produktion in kleinen Batches, schnelle Abwicklung – europaweit versendet.
-      </p>
-      <div class="actions left">
-        <a class="btn" href="#/kontakt">Unverbindlich anfragen</a>
-        <a class="btn" href="#/about">Mehr über TShirt-Willy</a>
-      </div>
-    </article>
   </section>
 </template>
 

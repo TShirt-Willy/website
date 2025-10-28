@@ -20,23 +20,6 @@
         </transition>
       </RouterView>
     </section>
-	
-    <!-- (leere Grid-Section kannst du löschen) -->
-
-    <section class="grid" aria-label="Highlights">
-      <article class="card tile">
-        <h3>Qualität zuerst</h3>
-        <p class="muted">Wir kuratieren Stoffe und Druckverfahren, die langlebig sind — ohne Kompromisse.</p>
-      </article>
-      <article class="card tile">
-        <h3>Faire Preise</h3>
-        <p class="muted">Transparente Kalkulation und regelmäßige Aktionen zum Launch.</p>
-      </article>
-      <article class="card tile">
-        <h3>Superschneller Versand</h3>
-        <p class="muted">Europaweit, klimaneutral — direkt aus unserem neuen Logistik-Setup.</p>
-      </article>
-    </section>
   </main>
 
   <footer>
