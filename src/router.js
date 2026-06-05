@@ -1,15 +1,23 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './views/Home.vue'
-import About from './views/About.vue'
-import Kontakt from './views/Kontakt.vue'
 
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'home', component: Home },
-    { path: '/about', name: 'about', component: About },
-    { path: '/kontakt', name: 'kontakt', component: Kontakt },
-    { path: '/:pathMatch(.*)*', redirect: '/' },
+    { path: '/about', redirect: { name: 'home', query: { section: 'referenzen' } } },
+    { path: '/kontakt', redirect: { name: 'home', query: { section: 'vertrieb' } } },
+    { path: '/:pathMatch(.*)*', redirect: { name: 'home' } },
   ],
-  scrollBehavior() { return { top: 0 } }
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    if (to.name === 'home' && !to.query.section) {
+      return { top: 0 }
+    }
+
+    return {}
+  },
 })
